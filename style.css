@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+ /* font-family: 'Russo One', sans-serif; */
+  /* font-family: 'Do Hyeon', sans-serif; */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(65, 65, 65);  
+}
+
+.button-container {
+  border: 2px solid black;
+  padding: 8px;
+  border-radius: 7px;
+  /* inset will place the border on the inside of the box, the horizontal offset, the vertical offset, the blur, spread(how far the shadow spreads), the color */
+  box-shadow: inset 10px 20px 4px -19px rgba(255, 255, 255, 0.7);
+}
+
+button {
+  cursor: pointer;
+  outline: none; /* will prevent the blue outline that a button normally shows */
+  width: 120px;
+  height: 65px;
+  font-family: 'Russo One','Do Hyeon', sans-serif;
+  font-size: 25px;
+  color: white; 
+  text-shadow: 0 2px 5px black;
+  background: linear-gradient(to top,#696969, #575757);
+  border: 2px solid black;
+  border-radius: 7px;
+  box-shadow: inset 10px 20px 4px -19px rgba(255, 255, 255, 0.4), 0 12px 12px 0 rgba(0, 0, 0, 0.3);
+} 
+
+button:hover {
+  background: linear-gradient(to bottom,#696969, #575757);
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
